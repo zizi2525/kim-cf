@@ -163,7 +163,7 @@ export async function extractVidmoly(baseUrl: string): Promise<Source> {
   });
 
   const source: Source = {
-    sources: sources,
+    sources: proxiedSources,
     tracks,
     audio: [],
     intro: { start: 0, end: 0 },
