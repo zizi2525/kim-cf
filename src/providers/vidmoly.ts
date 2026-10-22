@@ -158,7 +158,7 @@ export async function extractVidmoly(baseUrl: string): Promise<Source> {
       },
     };
     const encoded = base64UrlEncodeString(JSON.stringify(proxyPayload));
-    const proxiedUrl = `/hls/${encoded}`;
+    const proxiedUrl = `https://kim-cf.adqsdzedqs.workers.dev/hls/${encoded}`;
     return { url: proxiedUrl, quality };
   });
 
